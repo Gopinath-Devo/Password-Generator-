@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+
+    <div class="inputBox">
+      <input type="text" placeholder="Your Password Here..." id="generateBox" readonly />
+      <button id="copy-btn" aria-label="Copy password">Copy</button>
+    </div>
+
+    <label for="length">Length: <span id="sliderValueBox">12</span></label>
+    <input type="range" name="length" id="length" min="8" max="100" value="12" />
+   
+
+    <div class="checkbox">
+      <input type="checkbox" id="number" name="number" />
+      <label for="number">Number</label>
+
+      <input type="checkbox" id="characters" name="characters" checked />
+      <label for="characters">Characters</label>
+    </div>
+
+    <button id="generate-btn">Generate Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
